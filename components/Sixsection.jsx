@@ -2,7 +2,7 @@ import React from "react";
 
 function Sixsection() {
   return (
-    <div className="grid grid-cols-3 py-[50px] px-[20px] gap-x-3 ">
+    <div className="grid grid-cols-3 py-[50px] px-[20px] gap-x-3 max-md:grid-cols-1">
       <div className="flex flex-col items-center">
         <img src="/img/pizza1.png" alt="#" className="w-[250px] h-[250px]" />
         <h1 className="font-bold text-[28px]">Pizza Margeritta</h1>

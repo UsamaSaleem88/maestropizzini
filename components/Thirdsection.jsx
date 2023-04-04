@@ -3,17 +3,17 @@ import React from 'react'
 function Thirdsection() {
     return (
       <div
-        className="flex justify-center py-20 px-10 bg-no-repeat bg-fixed"
+        className="flex justify-center bg-center md:bg-cover py-20 px-10 bg-no-repeat bg-fixed"
         style={{ backgroundImage: "url(/img/bg.jpg)" }}
       >
         <div className="flex flex-col">
-          <div>
-            <h1 className="text-white font-bold text-[40px] w-[600px]">
+          <div className="flex items-center md:items-start">
+            <h1 className="text-white font-bold md:text-[40px] text-[18px] text-center md:text-start md:w-[600px]">
               Free Delivery With <br />
               PIZZA OF THE DAY <br /> Only 8.99 USD
             </h1>
           </div>
-          <div className="flex flex-start py-4">
+          <div className="flex justify-center md:justify-start py-4">
             <button className="bg-[rgb(255,69,79)] rounded-full text-white font-[700] flex justify-center px-5 py-3">
               Show More{" "}
             </button>

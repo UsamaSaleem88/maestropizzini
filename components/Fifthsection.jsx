@@ -3,7 +3,7 @@ import React from 'react'
 function Fifthsection() {
     return (
         <div >
-            <div className='bg-no-repeat bg-fixed bg-cover text-white font-bold  flex justify-center gap-x-[80px] py-[80px]' style={{ backgroundImage: 'url(/img/bg.jpg)' }}>
+            <div className='bg-no-repeat bg-fixed bg-cover max-md:flex-col max-md:gap-y-[20px] text-white font-bold  flex justify-center gap-x-[80px] py-[80px]' style={{ backgroundImage: 'url(/img/bg.jpg)' }}>
 
                 <div className='flex flex-col items-center'>
                     <h1 className='text-[28px]'>120</h1>
