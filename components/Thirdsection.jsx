@@ -14,9 +14,9 @@ function Thirdsection() {
             </h1>
           </div>
           <div className="flex justify-center md:justify-start py-4">
-            <button className="bg-[rgb(255,69,79)] rounded-full text-white font-[700] flex justify-center px-5 py-3">
-              Show More{" "}
-            </button>
+            <a className="bg-[rgb(255,69,79)] rounded-full md:text-[14px] text-[10px] text-white font-bold flex justify-center px-5 py-3">
+              SHOW MORE
+            </a>
           </div>
         </div>
 

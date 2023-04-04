@@ -5,10 +5,10 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
   return (
     <div>
-      <nav className={`${open ? "bg-[rgb(34,33,33)]" : "bg-transparent"}`}>
-        <div className="flex justify-between items-center px-[50px]">
+      <nav className={`${open ? "bg-[rgb(34,33,33)]" : "bg-transparent"} pt-2`}>
+        <div className="flex justify-between items-center px-[50px] ">
           <div>
-            <img src="/img/logo.png" alt="" className="w-[250px] h-[40px] max-md:w-[100px] max-md:h-[27px]" />
+            <img src="/img/logo.png" alt="" className="w-[250px] h-[40px] max-md:w-[100px] max-md:h-[27px] " />
           </div>
           <div className="hidden md:flex gap-[20px] font-extrabold text-[18px] text-white mt-6">
             <a href="#">HOME</a>

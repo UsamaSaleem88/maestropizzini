@@ -1,4 +1,9 @@
 import React from "react";
+import {
+  AiOutlineInstagram,
+  AiFillYoutube,
+  AiFillFacebook,
+} from "react-icons/ai";
 
 function Footer() {
   return (
@@ -43,15 +48,18 @@ function Footer() {
 
       <div className="text-white flex flex-col items-center justify-center">
         <p>Follow Us</p>
-        <a href="https://www.instagram.com/" target="_blank">
-          Instagram
-        </a>
-        <a href="https://www.youtube.com/" target="_blank">
-          Youtube
-        </a>
-        <a href="https://www.facebook.com/" target="_blank">
-          Facebook
-        </a>
+
+        <div className="flex max-md:flex-col items-center justify-center gap-x-2">
+          <a href="https://www.instagram.com/" target="_blank">
+            <AiOutlineInstagram color="rgb(235,64,52)" />
+          </a>
+          <a href="https://www.youtube.com/" target="_blank">
+            <AiFillYoutube color="rgb(235,64,52)" />
+          </a>
+          <a href="https://www.facebook.com/" target="_blank">
+            <AiFillFacebook color="rgb(235,64,52)" />
+          </a>
+        </div>
       </div>
     </div>
   );
