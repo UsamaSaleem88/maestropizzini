@@ -4,7 +4,7 @@ export default function Secondsection() {
   return (
     <div className=" max-md:bg-[url('/img/pizza.jpg')] bg-cover bg-no-repeat ">
       <div className="flex md:justify-between justify-center px-[10px] py-[80px] backdrop-blur-sm">
-        <div className="pl-[50px] max-md:text-center max-md:items-center flex flex-col pr-[20px] w-[90%]">
+        <div className="md:pl-[50px] max-md:text-center max-md:items-center flex flex-col md:pr-[20px] w-[90%]">
           <h3 className="md:text-[gray] text-white font-bold text-[30px]">
             About Us
           </h3>
