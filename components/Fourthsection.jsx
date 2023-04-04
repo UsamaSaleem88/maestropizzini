@@ -8,7 +8,7 @@ function Fourthsection() {
           <img src="/img/pizza.jpg" alt="#" />
         </div>
 
-        <div className="pl-[50px] pr-[20px] w-[90%]">
+        <div className="pl-[50px] pr-[20px] w-[90%] max-md:text-center max-md:items-center flex flex-col">
           <h3 className="md:text-[gray] text-white font-bold md:text-[30px] text-[18px]">
             The Pizza Menu
           </h3>
