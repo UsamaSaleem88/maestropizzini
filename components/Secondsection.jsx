@@ -16,8 +16,11 @@ export default function Secondsection() {
             legunt saepius. Claritas est etiam processus dynaus, quise sequitur
             mutationem consuetudium lectorum.
           </p>
-          <div className="bg-[rgb(255,69,79)] rounded-full flex justify-center md:w-[30%] w-[20%] py-[15px] md:px-[24px] px-[12px] mt-[20px]">
-            <a className="text-white md:text-[14px] text-[10px]  font-bold " href="#">
+          <div className="bg-[rgb(255,69,79)] rounded-full flex justify-center md:w-[30%] w-[40%] py-[15px] md:px-[24px] px-[12px] mt-[20px]">
+            <a
+              className="text-white md:text-[14px] text-[10px] font-bold"
+              href="#"
+            >
               READ MORE
             </a>
           </div>
