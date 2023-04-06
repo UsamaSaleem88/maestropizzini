@@ -8,11 +8,16 @@ export default function Navbar() {
       <nav className={`${open ? "bg-[rgb(34,33,33)]" : "bg-transparent"} pt-2`}>
         <div className="flex justify-between items-center px-[50px] ">
           <div>
-            <img src="/img/logo.png" alt="" className="w-[250px] h-[40px] max-md:w-[100px] max-md:h-[27px] " />
+            <img
+              src="/img/logo.png"
+              alt=""
+              className="w-[250px] h-[40px] max-md:w-[100px] max-md:h-[27px] "
+            />
           </div>
           <div className="hidden md:flex gap-[20px] font-extrabold text-[18px] text-white mt-6">
             <a href="#">HOME</a>
             <a href="#">MENU</a>
+            <a href="#">ABOUT</a>
             <a href="#">SHOP</a>
             <a href="#">NEWS</a>
             <a href="#">CONTACT</a>
@@ -29,6 +34,7 @@ export default function Navbar() {
           <div className="text-white flex flex-col items-center font-semibold font-[roboto] py-[20px]">
             <a href="#">HOME</a>
             <a href="#">MENU</a>
+            <a href="#">ABOUT</a>
             <a href="#">SHOP</a>
             <a href="#">NEWS</a>
             <a href="#">CONTACT</a>

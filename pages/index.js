@@ -22,15 +22,15 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div style={{backgroundImage:'url(/img/bg.jpg)'}} className='h-full pb-16 bg-no-repeat bg-cover'><Navbar/>
+      <div style={{ backgroundImage: 'url(/img/bg.jpg)' }} className='h-full pb-16 bg-no-repeat bg-cover'><Navbar />
         <Firstsection />
       </div>
-      <Secondsection/>
-      <Thirdsection/>
-     <Fourthsection/>  
-     <Fifthsection/>
-     <Sixsection/>
-     <Footer/>
+      <Secondsection />
+      <Thirdsection />
+      <Fourthsection />
+      <Fifthsection />
+      <Sixsection />
+      <Footer />
     </>
   )
 }
