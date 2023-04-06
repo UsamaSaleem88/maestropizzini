@@ -11,7 +11,7 @@ function About() {
           <h3 className="md:text-[gray] text-black font-bold md:text-[30px] text-[18px]">
             The Pizza Menu
           </h3>
-          <h1 className="md:text-[40px] text-[20px] text-black font-bold">
+          <h1 className="md:text-[40px] text-[20px] text-white font-bold">
             CHICAGO THIN CRUST
           </h1>
           <p className="md:text-[#8b8b8b] text-black md:text-[18px] text-[12px] ">

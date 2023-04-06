@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 function Sixsection() {
+  const getData = () => {console.log("first")};
+
+  useEffect(() => {
+    getData();
+  },[]);
   return (
     <div className="grid grid-cols-3 py-[50px] px-[20px] gap-x-3 max-md:grid-cols-1">
       <div className="flex flex-col items-center">
