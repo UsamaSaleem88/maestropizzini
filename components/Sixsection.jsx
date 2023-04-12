@@ -1,25 +1,34 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 function Sixsection() {
-  const getData = () => {console.log("first")};
+  const [items,setItems] = useState([]);
+  const getData = async () => {
+    const response = await fetch(`/api/get-menu-items`).then((res) => res.json()).catch((err) => console.error(err))
+    setItems(response.data);
+  };
 
   useEffect(() => {
     getData();
   },[]);
   return (
     <div className="grid grid-cols-3 py-[50px] px-[20px] gap-x-3 max-md:grid-cols-1">
-      <div className="flex flex-col items-center">
-        <img src="/img/pizza1.png" alt="#" className="w-[250px] h-[250px]" />
-        <h1 className="font-bold text-[28px]">Pizza Margeritta</h1>
-        <p className="text-[18px] text-[#888888] font-normal text-center">
-          Nullam nibh sem, imperdiet ultrices commodo a, vulputate vel ligula.
-          Duis venenatis at eros sed egestas. Mauris rutrum quam risus, vel
-          hendrerit dui tempor in.
-        </p>
-        <p className="font-normal text-[28px]">$50.00</p>
-      </div>
+      {items.length &&
+        items.map((item) => (
+          <div className="flex flex-col items-center" key={item.id}>
+            <img
+              src={item.image}
+              alt="#"
+              className="w-[250px] h-[250px]"
+            />
+            <h1 className="font-bold text-[28px]">{item.name}</h1>
+            <p className="text-[18px] text-[#888888] font-normal text-center">
+              {item.description}
+            </p>
+            <p className="font-normal text-[28px]">${item.price}</p>
+          </div>
+        ))}
 
-      <div className="flex flex-col items-center">
+      {/* <div className="flex flex-col items-center">
         <img src="/img/pizza2.png" alt="#" className="w-[250px] h-[250px]" />
         <h1 className="font-bold text-[28px]">Pizza Margeritta</h1>
         <p className="text-[18px] text-[#888888] font-normal text-center">
@@ -72,7 +81,7 @@ function Sixsection() {
           hendrerit dui tempor in.
         </p>
         <p className="font-normal text-[28px]">$22.00</p>
-      </div>
+      </div> */}
     </div>
   );
 }
